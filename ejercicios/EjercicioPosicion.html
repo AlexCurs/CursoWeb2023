@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioPosition</title>
+    <style>
+        .circulo_gris{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            /*background-color: rgb(0 0 0/0.5); */
+            background-image: linear-gradient(to right, rgb(0 0 0  / 0.2), rgb(0 0 0 / 0.5));
+            position: absolute;
+        
+        }
+        .sup_izq{
+            top: 50px;
+            left: 50px;
+
+        }
+        .sup_dcha{
+            top: 50px;
+            right: 50px;
+
+        }
+        .inf_izq{
+            bottom: 50px;
+            left: 50px;
+        }
+        .inf_dcha{
+            bottom: 50px;
+            right: 50px;
+        }
+        .cuadrado{
+            background-color: brown;
+            width: 180px;
+            height: 180px;
+            position: relative;
+            left: 550px;
+            top: 200px;
+
+
+        }
+        .pintar{
+            background-color: cadetblue;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-image: linear-gradient(to right, rgb(86, 86, 133) rgb(0 0 0/0.8));
+            position: absolute;
+            border: 1px solid black;
+            
+        }
+        .sup_izq{
+            bottom: 10px;
+            left: 10px;
+        }
+        .sup_dcha{
+
+        }
+            
+     
+    </style>
+</head>
+<body>
+    <main></main>
+       <div class="circulo_gris sup_izq"></div>
+       <div class="circulo_gris sup_dcha"></div>
+       <div class="circulo_gris inf_izq"></div>
+       <div class="circulo_gris inf_dcha"></div>
+       <div class="cuadrado"></div>
+
+       
+        <div id="pintar"> 
+        </div><div class="sup_izq"></div><div class="sup_dcha"></div><div class="centro"></div><div class="inf_izq"></div><div class="inf_dcha"></div>
+</div> >
+
+    </main>
+    
+    
+</body>
+</html>

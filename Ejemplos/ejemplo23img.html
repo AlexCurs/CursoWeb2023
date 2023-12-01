@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        img{
+            width: 100px;
+            height: 60px;
+        }
+        body{
+            background-image: url(fresas.jpg), url(platanos.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*fijar la imagen de fondo */
+            background-attachment: scroll; /* Por defecto */
+        }
+        main{
+            width: 1000px;
+            height: 1600px;
+            border: 40px solid orange;
+            margin: 340px auto;
+            background-image: url(platanos.jpg);
+            background-repeat: repeat-x; /* Repite en orizontal*/
+            background-repeat: repeat-y; /* Repite en vertical*/
+            background-repeat: repeat; /* Por defecto, Repite ambos en V y O*/
+            background-repeat: no-repeat; /* Solo muestra uno, no-repit) */
+            background-position: center 30px; /* Posicionar la imagen de fondo */
+            background-origin: content-box; /* El origen de background es el contenido*/
+            background-origin: border-box; /* El origen de background es el borde */
+            background-origin: padding-box; /* Por defecto */
+            background-size: 300px, 300px;
+            background-size: 100%, 100%;
+            background-size: contain;
+            background-size: cover; /* El cover se sobresale si ahi un border */
+            background-origin: border-box; /* Se pone cuando se sobresale y lo queremos ajustar al borde */
+            
+        }
+        section{
+            width: 70%;
+            height: 30px auto;
+            border: 10px dotted gray;
+            padding: 50px;
+            background-color: orange;
+            background-clip: border-box; /* Por defecto */
+            background-clip: padding-box;
+            background-clip: content-box;
+
+        }
+        article{
+            border: 40px solid greenyellow;
+            background-color: black;
+            color: white;
+            width: 60%;
+            margin: 20px auto;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="Imaden1.jpg" alt="Imagen" width="400" height="400">
+    </main>
+
+    <section>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum minus dignissimos inventore, eos laborum quos rerum odio a nam ipsum possimus hic eum voluptatem aliquam quibusdam voluptates recusandae blanditiis.</div>
+    </section>
+    <br><br><br><br><br><br>
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui dicta quis cupiditate corporis consequuntur velit consectetur voluptas natus dolor vitae excepturi nihil id perspiciatis, quaerat quasi adipisci libero. Mollitia.
+    </article>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    
+</body>
+</html>

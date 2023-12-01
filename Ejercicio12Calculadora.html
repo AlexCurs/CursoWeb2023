@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+       
+        @font-face {
+            font-family: Calculator;
+            src: url(../Fuentes/Calculator.ttf);
+        }
+        *{
+            box-sizing: border-box;
+        }
+        main{
+            width:500px;
+            height: 500px;
+            border-radius:50%;
+            background-color: chocolate;
+            margin: 50px auto;
+            padding: 70px 100px;
+        }
+        section{
+            width:300px;
+            height: 360px;
+            background-color: orange;
+            border-radius: 25px;
+      
+        }
+        article{
+            padding: 25px;
+            background-color: darkgrey;
+            border-radius: 25px 25px 0 0;
+        }
+        h1{
+            font-size:2em;
+            text-align:right;
+            margin: 0;
+            background-color: bisque;
+            padding: 3px 10px 3px 0;
+            border-radius: 7px;
+            font-weight: normal;
+            font-family: Calculator;
+            border: 4px inset gray
+        }
+        div{
+            padding:8px;
+            font-size:2em;
+            
+            float: left;
+            margin:4px;
+            width:22%;
+            text-align: center;
+            border-radius: 3px;
+            opacity:0.8;
+            color: black;
+        }
+        div:hover{
+            color:black;
+            opacity:1;
+            font-weight: bold;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article>
+                <h1>0</h1>
+            </article>
+            <div onclick="pintar(this)">7</div>
+            <div onclick="pintar(this)">8</div>
+            <div onclick="pintar(this)">9</div>
+            <div onclick="pintar(this)">*</div>
+            <div onclick="pintar(this)">4</div>
+            <div onclick="pintar(this)">5</div>
+            <div onclick="pintar(this)">6</div>
+            <div onclick="pintar(this)">-</div>
+            <div onclick="pintar(this)">1</div>
+            <div onclick="pintar(this)">2</div>
+            <div onclick="pintar(this)">3</div>
+            <div onclick="pintar(this)">+</div>
+            <div onclick="pintar(this)">0</div>
+            <div onclick="pintar(this)">.</div>
+            <div onclick="pintar(this)">=</div>
+            <div onclick="pintar(this)">%</div>
+        </section>
+    </main>
+    <script>
+        function vaciar(){
+            document.getElementsByTagName("H1")[0].innerHTML="0"
+        }
+        function pintar(elemento){
+            document.getElementsByTagName("H1")[0].innerHTML+=elemento.innerHTML;
+        }
+    </script>
+</body>
+</html>
